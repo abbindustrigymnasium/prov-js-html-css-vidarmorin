@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fråga 7</title>
+</head>
+
+<body>
+    <!-- Här ska din HTML kod vara -->
+
+    <script>
+        // Här ska din JavaScript kod vara
+        let action = prompt("area or volume");
+        
+        function area(b, h){
+            return b * h
+        };
+
+        function volume(b, h, d){
+            return b * h * d
+        };
+
+        if(action = "area"){
+            let b = parseInt(prompt("Bas"));
+            let h = parseInt(prompt("Höjd"));
+            let value = area(b, h);
+            alert(value);
+        };
+        if(action = "volume"){
+            let b = parseInt(prompt("Bas"));
+            let h = parseInt(prompt("Höjd"));
+            let d = parseInt(prompt("Djup"));
+            let volym = volume(b, h, d);
+            alert(volym);
+        };
+
+    </script>
+</body>
+
+</html>
